@@ -1,0 +1,23 @@
+[project]
+name = "microshop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Akbarali721", email = "akbaralixoliqov721@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+[dependency-groups]
+dev = ["pytest", "black (>=25.11.0,<26.0.0)"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+pydantic = {extras = ["email"], version = "^2.12.5"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.44"}
